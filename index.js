@@ -38,10 +38,9 @@ function sayName(names){
 }
 console.log(sayName(names));
 
-let numS = ["a", "b"];
-function addNums (numS){
-    numS[0] = 2
-    return numS;
+//using const and string interpolation 
+const name = "Geoff";
+function sayNam (name){
+    return `I\'am ${name}`;
 }
-console.log(addNums(numS));
-
+console.log(sayNam(name));
