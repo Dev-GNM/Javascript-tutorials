@@ -29,6 +29,8 @@ console.log(adder1(1));
 // }
 // console.log(addNum);
 
+// Passing by reference
+
 let names = ["John", "Geoff"];
 function sayName(names){
     names[0] = "Jonny";
@@ -36,4 +38,10 @@ function sayName(names){
 }
 console.log(sayName(names));
 
+let numS = ["a", "b"];
+function addNums (numS){
+    numS[0] = 2
+    return numS;
+}
+console.log(addNums(numS));
 
