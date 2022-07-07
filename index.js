@@ -54,3 +54,5 @@ function myNameis (myName){
     return myName;
 }
 console.log(myNameis(myName));
+
+// great sesssion on scoping 
