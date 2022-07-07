@@ -44,3 +44,13 @@ function sayNam (name){
     return `I\'am ${name}`;
 }
 console.log(sayNam(name));
+
+// modifying const
+// myName points is passed by reference and points to a memory address that's why const can be modified
+// passing by reference allows the parameters to be changed
+const myName = "Geoff";
+function myNameis (myName){
+    myName = "Njihia"
+    return myName;
+}
+console.log(myNameis(myName));
