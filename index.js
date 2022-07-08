@@ -66,56 +66,84 @@
 // }
 // sayGreeting("Anjette");
 
-// // using numbers you must pass the default values in the parameters
-// function addNumber(a = 2, b = 3) {
-//     return a + b;
+// // // using numbers you must pass the default values in the parameters
+// // function addNumber(a = 2, b = 3) {
+// //     return a + b;
+// // }
+
+// // let res = addNumber(3);
+// // console.log(res);
+
+
+// // // example 2
+// // function sayGreeting(name) {
+// //     console.log(`Good Morning, ${name}!`)
+// // }
+// // sayGreeting("Anjette");
+// // // if you are using return, you have to console.log the invoking to view on console
+
+
+// // // using arrow functions . You canno use the function only the function name
+// // sayGreeting = name => `Good Morning, ${name}!`;
+// // console.log(sayGreeting("Anjette"));
+
+// // Hello = (val) => return;
+// // you can also get rid of the parenthesis if the val contains one parameter
+
+// // function name(){
+// //     console.log(arguments[1]);
+// // }
+
+// // name(1,2,2,3,3,3,4,5,6,);
+
+// // myName = (...arguments) => {
+// //     console.log(arguments);
+// // }
+// // myName(1, 2, 4, 5);
+
+// // function name (){
+// //     console.log(arguments);
+
+// // }
+// // name(1,2,3,4,5);
+
+// // arrow functions do not use arguments
+// // let name = (...arguments) => {
+// //     console.log(arguments);
+// // }
+// // name(18);
+
+// // using arrow functions instead of if and else statements 
+// // let age = 18;
+// // let checkAge = (age < 18)?
+// //     () => console.log('Go Home!!!')
+// //         :() => console.log('Kukata maji ni sheria');
+// // checkAge();
+
+
+// // using this keyword
+// function Animal(name, color){
+//     this.name = name;
+//     this.color = color;
+
+//     this.introduce = function (){
+//         console.log(`My name is ${this.name}. My skin color is ${this.color}`);
+//     }
 // }
 
-// let res = addNumber(3);
-// console.log(res);
+// let animalX = new Animal ("Anjette, brown");
+// console.log(animalX);
+// animalX.introduce();
 
 
-// // example 2
-// function sayGreeting(name) {
-//     console.log(`Good Morning, ${name}!`)
-// }
-// sayGreeting("Anjette");
-// // if you are using return, you have to console.log the invoking to view on console
+// arrays and object destructuring 
+const names = ["Jane","Green"];
+function createUser ([firstName, lastName]){
+    let user = {
+        firstName: names,
+        lastName: names
+    };
+    return user;
+}
 
-
-// // using arrow functions . You canno use the function only the function name
-// sayGreeting = name => `Good Morning, ${name}!`;
-// console.log(sayGreeting("Anjette"));
-
-// Hello = (val) => return;
-// you can also get rid of the parenthesis if the val contains one parameter
-
-// function name(){
-//     console.log(arguments[1]);
-// }
-
-// name(1,2,2,3,3,3,4,5,6,);
-
-// myName = (...arguments) => {
-//     console.log(arguments);
-// }
-// myName(1, 2, 4, 5);
-
-// function name (){
-//     console.log(arguments);
-
-// }
-// name(1,2,3,4,5);
-
-// arrow functions do not use arguments
-// let name = (...arguments) => {
-//     console.log(arguments);
-// }
-// name(18);
-
-let age = 18;
-let checkAge = (age < 18)?
-    () => console.log('Go Home!!!')
-        :() => console.log('Kukata maji ni sheria');
-checkAge();
-
+console.log(createUser(names));
