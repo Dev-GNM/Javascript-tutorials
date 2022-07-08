@@ -59,8 +59,17 @@ console.log(myNameis(myName));
 
 
 // Day 2 JS tutorials 
+// adding a default value
 function sayGreeting(name = "unknown"){
     let greeting = `'Hello!' my name is ${name}`;
     console.log(greeting);
 }
 sayGreeting("Anjette");
+
+// using numbers you must pass the default values in the parameters
+function addNumber(a=2, b=3){   
+    return a + b;
+}
+
+let res = addNumber(3);
+console.log(res);
