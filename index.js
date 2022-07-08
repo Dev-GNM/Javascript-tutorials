@@ -84,10 +84,7 @@ sayGreeting("Anjette");
 
 
 // using arrow functions . You canno use the function only the function name
-sayGreeting = (name) => {
-    return `Good Morning, ${name}!`;
-}
-
+sayGreeting = (name) => `Good Morning, ${name}!`;
 console.log(sayGreeting("Anjette"));
 
 
