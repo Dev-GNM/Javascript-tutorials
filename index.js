@@ -108,7 +108,14 @@
 // name(1,2,3,4,5);
 
 // arrow functions do not use arguments
-let name = (...arguments) => {
-    console.log(arguments);
-}
-name(1,23,4,5,65,6);
+// let name = (...arguments) => {
+//     console.log(arguments);
+// }
+// name(18);
+
+let age = 18;
+let checkAge = (age < 18)?
+    () => console.log('Go Home!!!')
+        :() => console.log('Kukata maji ni sheria');
+checkAge();
+
