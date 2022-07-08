@@ -56,3 +56,11 @@ function myNameis (myName){
 console.log(myNameis(myName));
 
 // great sesssion on scoping 
+
+
+// Day 2 JS tutorials 
+function sayGreeting(name = "unknown"){
+    let greeting = `'Hello!' my name is ${name}`;
+    console.log(greeting);
+}
+sayGreeting("Anjette");
