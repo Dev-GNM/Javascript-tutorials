@@ -73,3 +73,11 @@ function addNumber(a=2, b=3){
 
 let res = addNumber(3);
 console.log(res);
+
+
+// example 2
+function sayGreeting (name){
+    console.log(`Good Morning, ${name}!`)
+}
+sayGreeting("Anjette");
+// if you are using return, you have to console.log the invoking to view on console
