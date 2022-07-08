@@ -32,7 +32,7 @@ console.log(adder1(1));
 // Passing by reference
 
 let names = ["John", "Geoff"];
-function sayName(names){
+function sayName(names) {
     names[0] = "Jonny";
     return names;
 }
@@ -40,7 +40,7 @@ console.log(sayName(names));
 
 //using const and string interpolation 
 const name = "Geoff";
-function sayNam (name){
+function sayNam(name) {
     return `I\'am ${name}`;
 }
 console.log(sayNam(name));
@@ -49,7 +49,7 @@ console.log(sayNam(name));
 // myName points is passed by reference and points to a memory address that's why const can be modified
 // passing by reference allows the parameters to be changed
 const myName = "Geoff";
-function myNameis (myName){
+function myNameis(myName) {
     myName = "Njihia"
     return myName;
 }
@@ -60,14 +60,14 @@ console.log(myNameis(myName));
 
 // Day 2 JS tutorials 
 // adding a default value
-function sayGreeting(name = "unknown"){
+function sayGreeting(name = "unknown") {
     let greeting = `'Hello!' my name is ${name}`;
     console.log(greeting);
 }
 sayGreeting("Anjette");
 
 // using numbers you must pass the default values in the parameters
-function addNumber(a=2, b=3){   
+function addNumber(a = 2, b = 3) {
     return a + b;
 }
 
@@ -76,8 +76,21 @@ console.log(res);
 
 
 // example 2
-function sayGreeting (name){
+function sayGreeting(name) {
     console.log(`Good Morning, ${name}!`)
 }
 sayGreeting("Anjette");
 // if you are using return, you have to console.log the invoking to view on console
+
+
+// using arrow functions . You canno use the function only the function name
+sayGreeting = (name) => {
+    return `Good Morning, ${name}!`;
+}
+
+console.log(sayGreeting("Anjette"));
+
+
+
+
+
