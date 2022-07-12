@@ -137,13 +137,28 @@
 
 
 // arrays and object destructuring 
-const names = ["Jane","Green"];
-function createUser ([firstName, lastName]){
-    let user = {
-        firstName: names,
-        lastName: names
-    };
-    return user;
-}
+// const names = ["Jane","Green"];
+// function createUser ([firstName, lastName]){
+//     let user = {
+//         firstName: names,
+//         lastName: names
+//     };
+//     return user;
+// }
 
-console.log(createUser(names));
+// console.log(createUser(names));
+
+
+// Objects
+
+const car = {
+    color: "red",
+    model: "BMW",
+    price: "ksh 250,000",
+    drivemode: "auto",
+    speed: function speed(){
+        console.log("fast")
+    }
+}; //object literal
+
+console.log(car.speed());
