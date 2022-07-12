@@ -162,3 +162,13 @@ const car = {
 }; //object literal
 
 console.log(car.speed());
+
+
+
+const array1 = [1, 2, 3, 4, 5, 6, 7];
+const array2 = [5, 6, 7, 8, 9, 10, 11];
+
+const result = array1.filter((item) => {
+    return array2.includes(item);
+});
+console.log(result);
