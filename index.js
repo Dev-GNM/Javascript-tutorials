@@ -172,3 +172,13 @@ const result = array1.filter((item) => {
     return array2.includes(item);
 });
 console.log(result);
+
+// console methods
+// console.table();
+console.table([
+    ["apple", "banana", "orange"],
+    ["ksh 100/kg", "ksh 200/kg", "ksh 250/kg"],
+    ["5 star", "4 star", "4.5 stars"]
+])
+
+
